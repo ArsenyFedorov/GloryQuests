@@ -10,11 +10,11 @@
 class TriangleChecker:
     # На хрен тут создавать класс ?)
     def is_triangle(self, num_1: int, num_2: int, num_3: int):
-        if (type(num_1) == int and type(num_2) == int and type(num_3) == int):
-            if (num_1 < 0 or num_2 < 0 or num_3 < 0):
+        if type(num_1) == int and type(num_2) == int and type(num_3) == int:
+            if num_1 < 0 or num_2 < 0 or num_3 < 0:
                 print("С отрицательными числами ничего не выйдет (")
             else:
-                if (num_1 < num_2 + num_3 and num_2 < num_1 + num_3 and num_3 < num_2 + num_1):
+                if num_1 < num_2 + num_3 and num_2 < num_1 + num_3 and num_3 < num_2 + num_1:
                     print("Ура можно построить треугольник")
                 else:
                     print("Жаль но этот треугольник не сделать (")
